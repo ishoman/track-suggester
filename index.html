@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script src="js/scripts.js"></script>
     <title>Epicodus Track Suggester</title>
@@ -15,66 +16,69 @@
         <p>A Vocational School for Tech Careers</p>
         <h5>Portland &bull; Seattle</h5>
       </div>
-      <div id="intro" class="well">
-        <h3>So you want to be a programmer...</h3>
-        <p>Now it's time to decide which language you want to learn! While most programmers continue to learn new languages as the move through their career, here at Epicodus you are required to select from the following tracks: </p>
-        <ul>
-          <li>Java/Android</li>
-          <li>CSS/React</li>
-          <li>C#/.NET</li>
-        </ul>
-        <p>(All tracks must complete Intro and JavaScript)</p>
-      </div>
-      <div id="survey" class="well">
-        <h4>Track Suggestion Survey</h4>
-        <p>Complete the following survey to receive a suggestion as to which track fits your preferences. Remember to keep an open mind! After all, this is just a suggestion!</p>
+      <div id="intro" class="col-md-5">
+        <!-- <div id="col-left" class="panel panel-body"> -->
+          <h3>So you want to be a programmer...</h3>
+          <p>Now it's time to decide which language you want to learn! While most programmers continue to learn new languages as the move through their career, here at Epicodus you are required to select from the following tracks: </p>
+          <ul>
+            <li>Java/Android</li>
+            <li>CSS/React</li>
+            <li>C#/.NET</li>
+          </ul>
+          <p id="">(All tracks must complete Intro and JavaScript)</p>
+        </div>
+      <div id="survey" class="col-md-7">
+        <!-- <div class="panel panel-body"> -->
+          <h4>Track Suggestion Survey</h4>
+          <p>Complete the following survey to receive a suggestion as to which track fits your preferences. Remember to keep an open mind! After all, this is just a suggestion!</p>
 <!-- Begin Survey Form -->
-        <form id="sugguestion">
-          <div class="form-group">
-            <label for="q1">What is your preferred company size?</label>
-            <select class="form-control" id="q1">
-              <option value="0"></option>
-              <option value="1">No Preference</option>
-              <option value="5">Large</option>
-              <option value="1">Small</option>
-            </select>
-            <label for="q2">What kind of app do you want to create?</label>
-            <select class="form-control" id="q2">
-              <option value="0"></option>
-              <option value="5">Large Business Software</option>
-              <option value="3">Web Applications</option>
-              <option value="2">No Preference</option>
-            </select>
-            <label for="q3">What type of company do you want to work for?</label>
-            <select class="form-control" id="q3">
-              <option value="0"></option>
-              <option value="5">Fortune 500</option>
-              <option value="2">Startup</option>
-              <option value="3">Freelance</option>
-            </select>
-            <label for="q4">What is your favorite part about a sports car?</label>
-            <select class="form-control" id="q5">
-              <option value="0"></option>
-              <option value="15">The Electrical</option>
-              <option value="-20">The Design</option>
-              <option value="5">The Trunk Space</option>
-            </select>
-            <label for="q5">What is your favorite kind of track?</label>
-            <select class="form-control" id="q4">
-              <option value="0"></option>
-              <option value="-20">Front-end Track</option>
-              <option value="">Back-end Track</option>
-              <option value="200">Race Track</option>
-            </select>
-          </div>
-          <button type="submit" class="btn-success">Submit</button>
-        </form>
+          <form id="sugguestion">
+            <div class="form-group">
+              <label for="q1">What is your preferred company size?</label>
+              <select class="form-control" id="q1">
+                <option value="0"></option>
+                <option value="1">No Preference</option>
+                <option value="5">Large</option>
+                <option value="1">Small</option>
+              </select>
+              <label for="q2">What kind of app do you want to create?</label>
+              <select class="form-control" id="q2">
+                <option value="0"></option>
+                <option value="5">Large Business Software</option>
+                <option value="3">Web Applications</option>
+                <option value="2">No Preference</option>
+              </select>
+              <label for="q3">What type of company do you want to work for?</label>
+              <select class="form-control" id="q3">
+                <option value="0"></option>
+                <option value="5">Fortune 500</option>
+                <option value="2">Startup</option>
+                <option value="3">Freelance</option>
+              </select>
+              <label for="q4">What is your favorite part about a sports car?</label>
+              <select class="form-control" id="q5">
+                <option value="0"></option>
+                <option value="15">The Electrical</option>
+                <option value="-20">The Design</option>
+                <option value="5">The Trunk Space</option>
+              </select>
+              <label for="q5">What is your favorite kind of track?</label>
+              <select class="form-control" id="q4">
+                <option value="0"></option>
+                <option value="-20">Front-end Track</option>
+                <option value="">Back-end Track</option>
+                <option value="200">Race Track</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-success">Submit</button>
+          </form>
+        </div>
       </div>
 <!-- Begin survey output -->
-    <div id="output" class="well">
-      <h3>Thanks for checking us out!</h3>
-      <p>We suggest that you select the <span class="suggestion"></span> But don't take our word for it! Continue in your research to see if this track is the right one for you and your career  goals. Good luck!</p>
+      <div id="output" class="well">
+        <h3>Thanks for checking us out!</h3>
+        <p>We suggest that you select the <span class="suggestion"></span> But don't take our word for it! Continue in your research to see if this track is the right one for you and your career  goals. Good luck!</p>
+      </div>
     </div>
-  </div>
   </body>
 </html>
