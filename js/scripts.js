@@ -25,7 +25,7 @@ $(document).ready(function() {
     var result = parseInt(suggestion(q1, q2, q3, q4, q5));
     console.log(result);
 
-    $("#output").show().text(result);
+    $(".suggestion").text("CSS");
     $("#output").show();
   });
 
