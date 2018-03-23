@@ -1,7 +1,9 @@
-// // Back-end Logic
-//  var suggestion = function(q1, q2, q3, q4, q5) {
-//    return q1 + q2 + q3 + q4 + q5;
-//  }
+// Back-end Logic
+ var suggestion = function(q1, q2, q3, q4, q5) {
+   return q1 + q2 + q3 + q4 + q5;
+ }
+
+
 
 
 
@@ -20,8 +22,10 @@ $(document).ready(function() {
     console.log(q4);
     var q5 = parseInt($("#q5").val());
     console.log(q5);
-    // // var result = suggestion(q1, q2, q3, q4, q5);
-    // var result = (q1 + q2 + q3 + q4 + q5);
+    var result = parseInt(suggestion(q1, q2, q3, q4, q5));
+    console.log(result);
+
+    $("#output").show().text(result);
     $("#output").show();
   });
 
