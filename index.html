@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Epicodus Track Suggester</title>
   </head>
   <body>
     <div class="container">
@@ -29,7 +29,8 @@
       <div id="survey" class="well">
         <h4>Track Suggestion Survey</h4>
         <p>Complete the following survey to receive a suggestion as to which track fits your preferences. Remember to keep an open mind! After all, this is just a suggestion!</p>
-        <form class="form">
+      <form id="sugguestion">
+        <div class="form-group">
           <label for="q1">Question</label>
           <select class="form-control" id="q1">
             <option value="1">a</option>
@@ -60,16 +61,13 @@
             <option value="2">b</option>
             <option value="3">c</option>
           </select>
-          <br>
-          <button type="submit" class="btn-success">Submit</button>
-        </form>
-      <div id="output" class="well">
-        <p>We suggest that you select the <span class="suggestion"></span> track! But don't take our word for it! Continue in your research to see if this track is the right one for you and your career  goals. Good luck!</p>
-      </div>
-      </div>
-      <div class="col-md-6">
-
-      </div>
+        </div>
+        <button type="submit" class="btn-success">Submit</button>
+      </form>
+    <div id="output" class="well">
+      <p>We suggest that you select the <span class="suggestion"></span> track! But don't take our word for it! Continue in your research to see if this track is the right one for you and your career  goals. Good luck!</p>
     </div>
+    </div>
+  </div>
   </body>
 </html>
