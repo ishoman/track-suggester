@@ -10,7 +10,10 @@ h5 {
 
 .panel-body {
   background-color: #DCD0C6;
-  border: 3px solid;
+}
+
+.container {
+  padding: 0;
 }
 
 .jumbotron {
@@ -18,10 +21,12 @@ h5 {
   background-repeat: no-repeat;
   background-size: 105%;
   margin-bottom: 10px;
+  border: 1px solid;
 }
 
 #intro {
-  padding: none;
+  padding-left: 5px;
+
 }
 
 #output {
