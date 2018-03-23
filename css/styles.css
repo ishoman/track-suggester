@@ -1,10 +1,16 @@
 body {
   background-color: #8EAEBC;
+
 }
 
 h5 {
   font-style: italic;
   text-decoration: underline;
+}
+
+.panel-body {
+  background-color: #DCD0C6;
+  border: 3px solid;
 }
 
 .jumbotron {
@@ -13,7 +19,6 @@ h5 {
   background-size: 105%;
   margin-bottom: 10px;
 }
-
 
 #intro {
   padding: none;
