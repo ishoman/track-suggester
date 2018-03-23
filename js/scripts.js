@@ -24,9 +24,19 @@ $(document).ready(function() {
     console.log(q5);
     var result = parseInt(suggestion(q1, q2, q3, q4, q5));
     console.log(result);
+      if (result <= 3) {
+        $(".suggestion").text("CSS/React track!");
+      } else if (result > 3) {
+        $(".suggestion").text("Java/Android track!");
+      } else if (result <=75) {
+        $(".suggestion").text("C#/.NET track!");
+      }  else {
+        $(".suggestion").text("first steps towards becoming a NASCAR driver!")
+      }
 
-    $(".suggestion").text("CSS");
     $("#output").show();
+    $("#survey").hide();
+    $("#intro").hide();
   });
 
 
