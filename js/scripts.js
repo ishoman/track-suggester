@@ -1,22 +1,28 @@
-// Back-end Logic
- var suggestion = function(q1, q2, q3, q4, q5) {
-   return q1 + q2 + q3 + q4 + q5;
- }
+// // Back-end Logic
+//  var suggestion = function(q1, q2, q3, q4, q5) {
+//    return q1 + q2 + q3 + q4 + q5;
+//  }
 
 
 
 
 // Front-end Logic
 $(document).ready(function() {
-  $("#suggestion").submit(function(event) {
+  $("#survey").submit(function(event) {
     event.preventDefault();
     var q1 = parseInt($("#q1").val());
-    var q2 = parseInt($("#q1").val());
-    var q3 = parseInt($("#q1").val());
-    var q4 = parseInt($("#q1").val());
-    var q5 = parseInt($("#q1").val());
-    var result = suggestion(q1, q2, q3, q4, q5);
-    console.log (result)
+    console.log(q1);
+    var q2 = parseInt($("#q2").val());
+    console.log(q2);
+    var q3 = parseInt($("#q3").val());
+    console.log(q3);
+    var q4 = parseInt($("#q4").val());
+    console.log(q4);
+    var q5 = parseInt($("#q5").val());
+    console.log(q5);
+    // // var result = suggestion(q1, q2, q3, q4, q5);
+    // var result = (q1 + q2 + q3 + q4 + q5);
+    $("#output").show();
   });
 
 
